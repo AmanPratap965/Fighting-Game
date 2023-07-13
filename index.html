@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="./style.css">
+ </head>
+ <body>
+            <div class="wrapper">
+                <!-- player1 div -->
+                <div class="player1">
+                    <h2 class="name" id="player1-name">Player1</h2>
+                    <img id="p1" src="https://i.gifer.com/Yrhj.gif" height="400" width="200"/>
+                    <div class="attack-div">      
+                        
+                        <h3>Q: <button class="attack" id="attack1">Attack</button></h3>
+                       
+                    </div>
+                    <div class="heal-div">
+                        <h3>A:<button class="heal" id="heal1">Heal</button></h3>
+                        
+                    </div>
+                    <h1 id="player1-health">100</h1>
+                </div>
+                    <!-- simulate button -->
+                    <button id="simulate">Simulate</button>
+
+                <!-- player2 div -->
+                <div class="player2">
+                    <h2 class="name" id="player2-name">Player2</h2>
+                    <img   id="p2" src="https://media.tenor.com/linSqKpI35gAAAAC/akuma-fighting-stance.gif" height="400" width="200"/>
+                    <div class="attack-div"><h3>P:<button class="attack" id="attack2">Attack</button></h3></div>
+                    <div class="heal-div"><h3>L:<button class="heal" id="heal2">Heal</button></h3></div>
+                    <h1 id="player2-health">100</h1>
+                </div>    
+               
+            </div>
+            <!-- winner div -->
+            <div id="winnerDiv"> <h1 id="winner"></h1></div>
+                    <!-- div for reseting the Game -->
+                    <div class="reset-div">
+                        <button id="resetBtn">Reset</button>
+                    </div>
+                    <audio id="p1attack" controls style="display:none">
+                        <source src="sounds/fastpunch.mp3" type="audio/mpeg"> 
+                      </audio>
+                      <audio id="p1heal" controls style="display:none">
+                        <source src="sounds/fastheal.mp3" type="audio/mpeg"> 
+                      </audio>
+                      <audio id="p2attack" controls style="display:none">
+                        <source src="sounds/quickhit.mp3" type="audio/mpeg"> 
+                      </audio>
+                      <audio id="p2heal" controls style="display:none">
+                        <source src="sounds/quickheal.mp3" type="audio/mpeg"> 
+                      </audio>
+                      <audio id="victory" controls style="display:none">
+                        <source src="sounds/victory.mp3" type="audio/mpeg"> 
+                      </audio>
+                      
+                        <script src="script.js"></script>
+ </body>
+ </html>
